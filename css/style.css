@@ -20,8 +20,9 @@ html {
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
+     -moz-box-sizing: inherit;
+       -o-box-sizing: inherit;
+    box-sizing: inherit;
   }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
@@ -143,8 +144,8 @@ nav a {
 header img {
     order: 2;
     align-self: center;
-    width: 200px;
-    height: 285px;
+/*  width: 200px;
+    height: 285px; */
     display: block;
     margin: 20px auto;
     border-radius: 10px;
