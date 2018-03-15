@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"> 
+    <title>My Personal Portfolio Site</title>
+<!------- Link for stylesheet ------->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!------- Linkfor HTML 5 shiv ------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    
+</head>
+<body>
+   <div id="container">
+    <header>
+        <nav id="main-nav">
+           <h2 id="banner">Dave</h2>
+           <div id="menu-toggle">
+                <i class="fa fa-bars"></i>
+           </div>
+          
+            <ul id="toggle-nav" class="nav">
+                <a href="#main-nav"><li>Home</li></a>
+                <a href="#portfolio"><li>Portfolio</li></a>
+                <a href="#contact_me"><li>Contact Me</li></a>
+            </ul>
+        </nav>
+        <section id="lower-head">
+        <article id="description">
+            <p>
+                Front End Web Developer and UX Designer, Focused on helping client create a dynamic web based app that is accessible to most browsers &amp; simplifies complex tasks
+            </p>
+            
+            <hgroup>
+                <h2>Web Developer</h2>
+                <h3>User Experience Designer</h3>
+            </hgroup>
+        </article>
+            
+        <img src="images/my_photo.jpg" alt="David's sitting in a garden">
+        
+        </section>
+    </header>
+    
+    <main>
+        <section id="portfolio">
+            <h2 class="legend">Portfolio</h2>
+            <ul>
+                <li><img class="portfolio-photos" src="images/portfolio1.jpeg" alt=""></li>
+                
+                <li><img src="images/portfolio2.jpeg" class="portfolio-photos" alt=""></li>
+                
+                <li><img class="portfolio-photos" src="images/portfolio3.jpeg"  alt=""></li>
+            </ul>
+        </section>
+        
+        <section id="contact_me">
+           <section id="left-contact">
+            <h2 class="legend" id="contact_head">Contact Me</h2>
+            
+            <form action="#" method="get">
+               
+                <label for="name" class="form_content">Name</label>
+                <input type="text" class="form_content" required>
+                <br />
+                
+                <label for="name" class="form_content">Contact Number</label>
+                <input type="tel" class="form_content" required>
+                <br />
+                
+                <label for="message" class="form_content">Message</label>
+                <textarea name="message" class="form_content" id="message" cols="30" rows="10"></textarea>
+                <br />
+                
+                <input type="submit" class="form_content">
+            </form>
+            
+            </section>
+            
+            <section id="right-contact">
+                 
+                <p>Any comments, suggestions, inquiries or just want to say <b>Hi</b>, Kindly message me thru this form. I promise to get back <b>ASAP</b> </p>  
+            </section>
+        </section>
+    </main>
+    <footer>
+      <div id="footer-wrap">
+      
+       <p id="acknowledgement">Special thanks to my Wife who's very patient with me and to my father, mother and sister and my mother in law</p>
+          
+           <div id="social-wrap">
+            <ul>
+                <li>
+                <a href="#">
+                    <i class="fa fa-facebook"></i>
+                </a></li>
+
+                <li>
+                   <a href="#">
+                    <i class="fa fa-google-plus-square"></i>
+                    </a>
+                </li>
+
+                <li>
+                   <a href="#">
+                    <i class="fa fa-twitter-square"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        </div>
+        <p id="copyright">&copy;Copyright 2018</p>
+    </footer>
+    
+    <div id="go-up"><a href="#main-nav"><i class="fa fa-arrow-circle-up"></i></a></div>
+    </div>
+  
+<!------- NAVIGATION TOGGLE ------->  
+    <script>
+        var nav = document.getElementById('toggle-nav'),
+        toggle = document.getElementById('menu-toggle');
+        
+        toggle.addEventListener('click', function(){
+        nav.classList.toggle('open');
+        })
+        
+        $(document).ready(function(){
+            $)("#go-up").click(function(){
+                
+            })
+        });
+        
+        
+    </script>
+</body>
+</html>
