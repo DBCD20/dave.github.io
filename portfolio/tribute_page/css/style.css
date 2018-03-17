@@ -1,0 +1,150 @@
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Libre+Barcode+39+Text|Raleway|Satisfy');
+        
+            * {
+                margin: 0;
+                padding: 0px;
+            }
+            
+            
+            
+            h1, h2, h3, h4, h5 {
+                text-align: center;
+            }
+            
+            a {
+                text-decoration: none;
+                font-weight: bolder;
+            }
+            
+            h1 {
+                font-size: 5em;
+                font-family: 'Abril Fatface', cursive;
+                letter-spacing: 10px;
+            }
+            
+            
+            h2 {
+                font-family: 'Libre Barcode 39 Text', cursive;
+                font-size: 3em;
+                font-weight: lighter;
+                line-height: 2;
+            }
+            
+            h4 {
+                letter-spacing: 3px;
+            }
+            hgroup {
+                margin: 2% auto;
+            }
+            
+            h5 {
+                font-family: 'Raleway', sans-serif;
+                font-size: 1.2em;
+                letter-spacing: 8px;
+            }
+            
+            img {
+                max-width: 100%;
+            }
+            
+            section, figure {
+                margin:5% auto;
+                padding: 3%;
+                text-align: center;
+                box-sizing: border-box;
+                
+            }
+            
+            ul {
+                display: block;
+                margin: 0 auto;
+                width: 90%;
+                text-align: justify;
+            }
+            
+            
+            ul li {
+                list-style: none;
+                margin: 4% auto;
+                font-family: 'Raleway', cursive;
+                letter-spacing: 4px;
+                lett
+            }
+            
+            #qoute1, #qoute2 {
+                font-size: 3em;
+                font-family: 'Satisfy', cursive;
+                letter-spacing: 5px;
+                font-weight: 550;
+            }
+            
+            span {
+                font-size: 1.5em;
+                line-height: 0.5;
+                font-weight:900;
+            }            
+            
+            footer {
+                width: 100%;
+                text-align: center;
+                background: black;
+                color: white;
+                font-family: 'Raleway', cursive;
+                line-height: 3;
+            }
+            
+            @media only screen and (max-width:420px) {
+                h1 {
+                    font-size: 2em;
+                    letter-spacing: 4px;
+                }
+                h2 {
+                    font-size: 25px;
+                    line-height: 1;
+                }
+                h5 {
+                    font-size: 12px;
+                    letter-spacing: 3px;
+                }
+                #qoute1, #qoute2 {
+                    font-size: 2em;
+                    letter-spacing: 3px;
+                }
+                ul {
+                    font-size: 11px;
+                }
+                li {
+                    letter-spacing: 2px;
+                    text-align: center;
+                    padding-bottom: 8px;
+                    border-bottom: 0.5px solid gray;
+                }
+                li:last-child {
+                    border-bottom: none;
+                }
+            }
+                @media only screen and (min-width:747px) {
+                    h1 {
+                        letter-spacing: 15px;
+                    }
+                    h2 {
+                        letter-spacing: 5px;
+                        font-size: 4em;
+                    }
+                    #qoute1, #qoute2 {
+                        font-size: 4em;
+                        font-weight: 600px;
+                    }
+                    ul {
+                        width: 80%;
+                        max-width: 800px;
+                        text-align: justify;
+                    }
+                    li {
+                        font-size: 18px;
+                        letter-spacing: 4px;
+                    }
+                }

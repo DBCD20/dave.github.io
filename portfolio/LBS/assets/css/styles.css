@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    font-size: 1em;
+    list-style: none;
+}
+.container-fluid {
+    padding: 0;
+    letter-spacing: 0.10em;
+    line-height: 2.1em;
+}
+h1 {
+    font-size: 4.2em;
+    }
+h2 {
+    font-size: 2.8em;
+    letter-spacing: 0.35em;
+    max-width: 500px;
+    margin:0 auto;
+    border: 1px solid black;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+}
+a {
+    font-size: 1.05em;
+}
+header {
+    background: url('../images/computer.jpeg') no-repeat center;
+    background-size: cover;
+    background-attachment:fixed;
+    height: 700px;
+}
+header::after {
+    content:"";
+    width: 100%;
+    height: 700px;
+    top: 0;
+    background: rgba(174,174,166,0.5);
+    position:absolute;
+    z-index: 0;
+}
+.box-shadow {
+    box-shadow: 0 0px 10px darkgray;
+}
+#main-navbar {
+    background: black;
+    width: 100%;
+    z-index: 100;
+}
+.main-nav:hover {
+    background: #31e3fd; 
+    height: 100%;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.7s;
+}
+.active {
+    background: #31e3fd; 
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: black;
+}
+hgroup {
+    color: black;
+    position: relative;
+    z-index: 100;
+}
+/******* What we offer container *******/
+.jumbotron {
+    background: black;
+    box-shadow: 0 0 15px gray;
+    border-radius: none;
+}
+.jumbotron p {
+    font-size: 1.05em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.75em;
+}
+main {
+    height: 700px;
+}
+article {
+    height: 100%;
+}
+main img {
+    max-width: 100%;
+    height: auto;
+}
+description {
+    height: 400px;
+}
+footer {
+    background: black;
+    border-top: 14px solid gray;
+}
+/******* Social UL *******/
+footer ul li a:hover {
+    background: #d9d9d9; 
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.7s;  
+}
+footer p {
+    font-size: 0.75em;
+    text-align: justify;
+    line-height: 1.75em;
+}
+footer h4 {
+    position: absolute;
+    bottom: 0;
+}
+/*------- RESPONSIVE -------*/
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 0.95em;
+    }
+    main {
+        height: 780px;
+    }
+    #mainNav li a {
+    font-size: 1.75em;
+    }
+    footer p {
+        font-size: 0.75em;
+    }
+}
+/*------- For much smaller screen -------*/
+@media only screen and (max-width: 560px) {
+    * {
+        font-size: 0.9em;
+    }
+    #mainNav li a {
+    font-size: 1.75em;
+    }
+    .navbar-brand {
+        0.35em;
+    }
+    h2 {
+        max-width: 200px;
+        font-size: 1.75em;
+    }
+    footer p {
+        font-size: 0.75em;
+    }
+}
+/******** ANIMATION EFFECTS *******/
+
+hgroup h1 {
+    animation: slide-right 1s ease;
+}
+hgroup h2 {
+    animation: slide-left 1s ease;
+}
+@keyframes slide-right {
+    0% {
+        transform: translate(100%);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+@keyframes slide-left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+/******** MY ACCOUNT STYLE *******/
+#my-account-header {
+    height: 350px;
+}
+#my-account-header::after {
+        background: rgba(174,174,166,0.2);
+    height: 350px;
+}
+#main-dashboard {
+    min-height: 500px;
+}
+#dash-wrap {
+    margin-top: 60px;
+}
+.rounded-circle {
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+}
+.profile-pic {
+    height: 200px;
+    width: 200px;
+    display: block;
+    position: absolute;
+    top: 250px;
+    left: 10%;
+    z-index: 90;
+}

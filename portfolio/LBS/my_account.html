@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, fit-to-shrink=no">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>LBS Website</title>
+        
+<!-------------- BOOTSTRAP CDN -------------->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-------------- FONT AWESOME -------------->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+<!-------------- Custom CSS ---------------->
+<link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+     <div class="container-fluid"> 
+           <nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-dark py-1 box-shadow">
+                
+                    <div class="navbar-header">
+                      <h3 class="text-light lext-left">Hi Liza!</h3>
+                    </div>
+                    
+                 <!------- Navbar collapse button ------->
+                   <button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#mainNav">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+                    
+                  <!--- main navigation --->
+                  <div class="collapse navbar-collapse" id="mainNav">
+                      <ul class="navbar-nav ml-auto text-left">
+                        <li class="nav-item">
+                            <a class="nav-link main-nav p-3" href="index.html">Home</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link main-nav p-3" >My Profile</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link main-nav p-3">Settings</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#about-us" class="nav-link main-nav p-3">Help</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link main-nav p-3">Log Out</a>
+                        </li>
+                        
+                        
+                      </ul>
+                  </div> 
+                </nav> 
+            <header id="my-account-header" class="box-shadow">
+            </header>
+            
+            <div id="main-dashboard"class="container py-5">
+                    <img src="assets/images/woman.jpeg" alt="" class="d-block profile-pic responsive rounded-circle mx-auto">
+                
+                   
+                    <div id="dash-wrap" class="container mx-auto row position-relative">
+                        <div class="container bg-light p-4">
+                        <h4 class="text-secondary">No Activities</h4>
+                        </div>
+                        
+                        <div class="card p-4 order-1 col-md-4">
+                          <div class="card-image-top text-center"><i class="move-icon fas fa-envelope-open fa-7x text-info"></i></div>
+                          <div class="card-body">
+                            <h4 class="card-title text-center">Messages</h4>
+                            <a href="#" class="btn btn-primary mx-auto d-block disabled">See More<span class="badge badge-secondary">0</span></a>
+                          </div>
+                        </div>
+
+
+                        <div class="card p-4 order-2 col-md-4">
+                          <div class="card-image-top text-center"><i class="move-icon far fa-calendar-alt fa-7x text-success"></i></div>
+                          <div class="card-body">
+                            <h4 class="card-title text-center">Calendar</h4>
+                            <a href="#" class="btn btn-primary d-block mx-auto disabled">See More<span class="badge badge-secondary">0</span></a>
+                          </div>
+                        </div>
+
+
+                        <div class="card p-4 col-md-4">
+                          <div class="card-image-top text-center"><i class="move-icon far fa-handshake fa-7x text-primary"></i></div>
+                          <div class="card-body">
+                            <h4 class="card-title text-center">Messages</h4>
+                            <a href="#" class="btn btn-primary d-block mx-auto disabled">See More<span class="badge badge-secondary">0</span></a>
+                          </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                </div>   
+            <footer class="py-3">
+                <div  class="col-md-12 d-flex flex-wrap flex-sm-row justify-content-between align-items-center">
+                   <p class="order-1 col-xs-5 col-sm-6">
+                       orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                   </p>
+               <!------------- Social ------------->
+                    <ul class="nav order-2 mx-auto pull-right">
+                        <li class="">
+                            <a href="#" class="nav-link">
+                                <i class="fab fa-facebook-square fa-5x text-secondary"></i>
+                            </a>
+                        </li>
+                        <li class="nav-items">
+                            <a href="#" class="nav-link">
+                                <i class="fab fa-google-plus-square fa-5x text-secondary"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">
+                               <i class="fab fa-twitter-square fa-5x text-secondary"></i> 
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!------------- Copyright ------------->
+                <div class="container-fluid">
+                    <h4 class="col-md-12 text-center">&copy; Copyright2018</h4>
+                </div>
+                
+            </footer>
+     </div>
+    </body>
+</html>

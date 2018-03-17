@@ -48,11 +48,23 @@
         <section id="portfolio">
             <h2 class="legend">Portfolio</h2>
             <ul>
-                <li><img class="portfolio-photos" src="images/portfolio1.jpeg" alt=""></li>
+                <li>
+                    <a href="portfolio/LBS/index.html" target="_blank">
+                        <img class="portfolio-photos" src="images/LBS.png" alt="a website for lbs made with bootstrap 4">
+                    </a>
+                </li>
                 
-                <li><img src="images/portfolio2.jpeg" class="portfolio-photos" alt=""></li>
+                <li>
+                    <a href="portfolio/tribute_page/index.html" target="_blank">
+                        <img class="portfolio-photos" src="images/tribute_page.png" alt="a tribute page to doctor fe del mundo">
+                    </a>
+                </li>
                 
-                <li><img class="portfolio-photos" src="images/portfolio3.jpeg"  alt=""></li>
+                <li>
+                    <a href="portfolio/to_do_list/index.html" target="_blank">
+                        <img class="portfolio-photos" src="images/todo_list.png" alt="a todo list page, made with javascript and jquery">
+                    </a>
+                </li>
             </ul>
         </section>
         
@@ -121,12 +133,20 @@
 <!------- NAVIGATION TOGGLE ------->  
     <script>
         var nav = document.getElementById('toggle-nav'),
-        toggle = document.getElementById('menu-toggle');
+        toggle = document.getElementById('menu-toggle'),
+            goUp = document.getElementById("go-up").style.display;
         
         toggle.addEventListener('click', function(){
         nav.classList.toggle('open');
         })
-        
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        goUp = "block";
+        } else {
+        goUp  = "none";
+        }
+}
+
         
         
     </script>

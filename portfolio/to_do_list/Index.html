@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta>
+        <title>JQuery Tuts</title>
+        <link rel="stylesheet" href="font_awesome/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Roboto');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 0.04em;
+            }
+            body {
+                background: linear-gradient(to bottom, #2bc0e4, #eaecc6);
+                background-size: cover;
+                background-attachment: fixed;
+                height: 100vh;
+                padding: 10px;
+            }
+            div{
+                margin: 0 auto;
+                margin-top: 30px;
+                position: relative;
+                top: 10%;
+                box-sizing: border-box;
+                box-shadow: 0 5px 10px #4c4c4c, 0 7px 30px #595959, 0 10px 30px #eaecc6;
+                max-width: 440px;
+            }
+            h1 {
+                padding: 10px;
+                background: #189ad3;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 800;
+            }
+            #show_input {
+                float: right;
+                cursor: pointer;
+                    
+            }
+            .animate {
+                animation: hey 0.3s linear infinite; 
+            }
+            #show_input:hover, .stop {
+                animation:none;
+            }
+            @keyframes hey {
+                    50% {
+                        transform: rotateZ(-20deg);
+                    }
+                    100%{
+                        transform: rotateZ(20deg);
+                    }
+                }
+            input {
+                background: #eeeeee;
+                display: none;
+                width: 100%;
+                height: 40px;
+                padding: 10px 20px;
+                outline: none;
+                font-family: arial;
+                font-size: 1.2em;
+                border: none;
+            }
+            .toggle_input {
+              display:block;  
+            }
+            input[type="submit"] {
+                display: inline-block;
+                border-radius: 10px;
+                width: 100px;
+            }
+            input:focus {
+                background: white;
+                outline: 2px dashed #189ad3;
+            }
+            ul li {
+                background: white;
+                font-family: arial;
+                font-weight: 600;
+                color: #232b2b;
+                list-style: none;
+                width: 100%;
+                line-height: 40px;
+                cursor: pointer;
+            }
+            
+            ul li:nth-child(even) {
+                background: #eeeeee;
+            }
+            li span {
+                background: #ff0000;
+                color: white;
+                text-align: center;
+                display: inline-block;
+                width: 0;
+                opacity: 0;
+                height: 40px;
+                margin-right: 20px;
+                cursor: pointer;
+            }
+/******* Delete button *******/
+            li:hover span {
+            width: 50px;
+            transition: 0.3s linear;
+            opacity: 1;
+            }
+/******* Completed Class *******/
+            .completed {
+            text-decoration:line-through;
+            text-decoration-style: solid;
+            color: darkgray;
+            font-weight: 200;
+            transition: color 1s;
+            }
+        </style>
+    </head>
+    <body>
+       <div id="1">
+          <h1>To Do List <span id="show_input" class="animate">+</span></h1>
+          
+          <input type="text" id="message" placeholder="Add to do. . .">
+          
+           <ul></ul>
+           
+       </div>
+       
+<script>
+ //------- Start function after document is fully loaded -------//           
+ $(document).ready(function(){
+     
+ //------- Hide/Show Input -------//    
+$("#show_input").click(function(){
+    $("input").fadeToggle(function(){
+        $(this).focus();
+        $("#show_input").toggleClass('stop');
+         });
+     });
+                 
+ //------- Adding Tasks -------//                
+$("#message").keypress(function(event){
+    if(event.which === 13) {
+     var fromInput = $(this).val();
+
+        if(fromInput.length !== 0) { 
+         $('ul').prepend("<li><span><i class='fa fa-trash-alt'></i></span>"+fromInput+"</li");
+         $(message).val('').fadeOut(200);
+        }
+        
+        else {
+            alert("Please write a new note");
+        }
+    }
+});
+                 
+//------- Delete Button -------//
+ $("ul").on("click", "span", function(){
+//------- on() ----> load this script even to new elements -------//
+     $(this).parent().remove();
+ });
+
+//------- Completed -------//
+$("ul").on("click","li", function(){
+    $(this).toggleClass('completed');
+})
+ 
+ });
+</script>
+    </body>
+</html>
