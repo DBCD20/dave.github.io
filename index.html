@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <title>My Personal Portfolio Site</title>
 <!------- Link for stylesheet ------->
     <link rel="stylesheet" href="css/style.css">
@@ -22,25 +22,30 @@
            </div>
           
             <ul id="toggle-nav" class="nav">
-                <a href="#main-nav"><li>Home</li></a>
-                <a href="#portfolio"><li>Portfolio</li></a>
-                <a href="#contact_me"><li>Contact Me</li></a>
+                <li>
+                    <a href="#main-nav">Home</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact_me">Contact Me</a>
+                </li>
             </ul>
         </nav>
-        <section id="lower-head">
-        <article id="description">
-            <p>
-                Front End Web Developer and UX Designer, Focused on helping client create a dynamic web based app that is accessible to most browsers &amp; simplifies complex tasks
-            </p>
-            
-            <hgroup>
-                <h2>Web Developer</h2>
-                <h3>User Experience Designer</h3>
-            </hgroup>
-        </article>
-            
-        <img src="images/my_photo.png" alt="David's sitting in a garden" width="200px" height="285px">
         
+        <section id="lower-head">
+            <article id="description">
+                <p>
+                    Front End Web Developer and UX Designer, Focused on helping client create a dynamic web based app that is accessible to most browsers &amp; simplifies complex tasks
+                </p>
+
+                    <h2>Web Developer</h2>
+                    <h3>User Experience Designer</h3>
+
+            </article>
+            
+            <img src="images/my_photo.png" alt="David's sitting in a garden" width="200" height="285">
         </section>
     </header>
     
@@ -68,18 +73,18 @@
             </ul>
         </section>
         
-        <section id="contact_me">
+        <div id="contact_me">
            <section id="left-contact">
             <h2 class="legend" id="contact_head">Contact Me</h2>
             
             <form action="#" method="get">
                
                 <label for="name" class="form_content">Name</label>
-                <input type="text" class="form_content" required>
+                <input type="text" id="name" class="form_content" required>
                 <br />
                 
-                <label for="name" class="form_content">Contact Number</label>
-                <input type="tel" class="form_content" required>
+                <label for="contact-number" class="form_content">Contact Number</label>
+                <input type="tel" id="contact-number" class="form_content" required>
                 <br />
                 
                 <label for="message" class="form_content">Message</label>
@@ -95,12 +100,12 @@
                  
                 <p>Any comments, suggestions, inquiries or just want to say <b>Hi</b>, Kindly message me thru this form. I promise to get back <b>ASAP</b> </p>  
             </section>
-        </section>
+        </div>
     </main>
     <footer>
       <div id="footer-wrap">
       
-       <p id="acknowledgement">Special thanks to my Wife who's very patient with me and to my father, mother and sister and my mother in law</p>
+       <p id="acknowledgement">Special thanks to my Wife who's very patient with me and to my father, mother and sister and my mother-in-law</p>
           
            <div id="social-wrap">
             <ul>

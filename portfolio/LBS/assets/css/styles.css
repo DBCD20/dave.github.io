@@ -26,9 +26,7 @@ p {
 a {
     font-size: 1.05em;
 }
-img {
-image-rendering: -webkit-optimize-contrast;
-}
+
 
 header {
     background: url('../images/computer.jpeg') no-repeat center;

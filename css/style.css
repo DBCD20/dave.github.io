@@ -176,7 +176,8 @@ main {
 }
 #portfolio ul {
     background: #eeead4cc;
-    min-height: 400px;
+    min-height: 300px;
+    padding: 10px 0;
 
 }
 #portfolio ul li {
