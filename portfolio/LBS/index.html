@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>LBS Website</title>
         
 <!-------------- BOOTSTRAP CDN -------------->
@@ -56,11 +56,11 @@
                 <!------- Header Group ------->
                 <div class="container-fluid d-table h-100">
                    <div class="d-table-cell align-middle text-center">
-                    <hgroup >
-                        <h1 class="font-weight-light text-uppercase">Our Technology</h1>
-                        <h2 class="font-weight-light text-uppercase">Your Future</h2>  
-                    </hgroup>
-                    </div>
+                        <div class="hgroup">
+                            <h1 class="font-weight-light text-uppercase">Our Technology</h1>
+                            <h2 class="font-weight-light text-uppercase">Your Future</h2>  
+                        </div>
+                   </div>
                 </div>
             </header>
             <!------------- What we offer container ------------>
@@ -113,7 +113,7 @@
                     </div>
                   
                    <div  class="col-md-5 order-2">
-                        <h3 id="about-us" class="text-center text-dark">ABOUT US</h3>
+                        <h3 id="about-us-header" class="text-center text-dark">ABOUT US</h3>
 
                         <p class="p-3 text-justify font-weight-light text-secondary">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
@@ -132,25 +132,25 @@
                                <li class="nav-item"><a class="nav-link btn btn-dark-info active" href="#log-in" data-toggle="pill">Log-In</a></li>
                            </ul>
                            <!------- REGISTRATION PANEL ------->
-                            <form action="" id="register" class="tab-pane fade p-4 bg-light">
+                            <form id="register" class="tab-pane fade p-4 bg-light">
                                 <input type="text" id="name" placeholder="Name" class="form-control form-control-lg my-2" autofocus required>
 
-                                <input type="mail" id="e-mail" placeholder="E-mail" class="form-control form-control-lg my-2" required>
+                                <input type="email" id="e-mail" placeholder="E-mail" class="form-control form-control-lg my-2" required>
 
-                                <input type="text" id="username" placeholder="Username" class="form-control form-control-lg my-2" required>
+                                <input type="text" id="username-reg" placeholder="username-reg" class="form-control form-control-lg my-2" required>
 
                                 <input type="password" placeholder="Password" class="form-control form-control-lg my-2" required>
 
-                                <input type="submit"value="REGISTER NOW"class="btn btn-info btn-lg font-weight-light d-block mx-auto"> 
+                                <input type="submit"value="REGISTER NOW" class="btn btn-info btn-lg font-weight-light d-block mx-auto"> 
                             </form>
                             
                             <!------- LOG IN PANEL ------->
                             <form action="my_account.html" id="log-in" class=" tab-pane fade show active p-4 bg-light">
-                                <input type="text" id="username" placeholder="Username" class="form-control form-control-lg my-2" autofocus required>
+                                <input type="text" id="username-log" placeholder="username-log" class="form-control form-control-lg my-2" required>
 
                                 <input type="password" placeholder="Password" class="form-control form-control-lg my-2" required>
 
-                                <label for="" class=""><input type="checkbox">
+                                <label for="check-me" class=""><input type="checkbox" id="check-me">
                                 Remember Me</label>
                                 <br />
                                 <input class="btn btn-info btn btn-lg font-weight-light d-block mx-auto" value="LOG IN" type="submit">
